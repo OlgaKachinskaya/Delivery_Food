@@ -1,0 +1,67 @@
+@font-face {
+    font-family:SF Pro Display;
+    src: url(../fonts/SFProDisplay-Regular.ttf);
+    
+}
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.block
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    max-width: 1200px;
+    margin:auto;
+    width: 100%;
+}
+.header {
+    padding-top: 40px;
+}
+.adress-input {
+    max-width: 690px;
+    height: 40px;
+    width: 100%;
+    background: url('../img/home.svg') no-repeat 11px 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    padding-left: 32px;
+}    
+.adress-input::placeholder {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+        color: #BFBFBF;
+    
+}
+.buttons {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.button{
+    padding: 8px 16px;
+    display:flex;
+    align-items: center;
+    border-radius: 2px;
+    border:none;
+    cursor: pointer;
+    font-family: SF Pro Display;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+}   
+.button--primary {
+    background: #1890FF;
+    color: #FFFFFF;
+} 
+.button--secondary{
+   background:transparent;
+   border: 1px solid #D9D9D9; 
+   margin-left: 8px;
+}
