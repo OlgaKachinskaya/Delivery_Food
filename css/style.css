@@ -4,39 +4,56 @@
     
 }
 * {
+
     box-sizing: border-box;
     margin:0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+    html {
+   font-family: 'Roboto' sans-serif;
+}
+.body {
+    background-color: #F5F5F5;
 }
 .block
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+   }
+   .cards {
+       flex-wrap: wrap;
+   }
 .container {
     max-width: 1200px;
     margin:auto;
     width: 100%;
 }
+.input {
+border-radius: 2px; 
+border: 1px solid #D9D9D9;  
+width: 100%;
+}
 .header {
-    padding-top: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .adress-input {
     max-width: 690px;
     height: 40px;
-    width: 100%;
     background: url('../img/home.svg') no-repeat 11px 10px;
-    border: 1px solid #D9D9D9;
-    border-radius: 2px;
     padding-left: 32px;
+    width: 100%;
+    border-radius: 2px; 
+border: 1px solid #D9D9D9;  
 }    
 .adress-input::placeholder {
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-        color: #BFBFBF;
+    color: #BFBFBF;
     
 }
 .buttons {
@@ -64,4 +81,113 @@ line-height: 24px;
    background:transparent;
    border: 1px solid #D9D9D9; 
    margin-left: 8px;
+}
+/*промо секция*/
+.section-promo {
+margin-bottom: 56px;
+}
+.promo-block {
+background: #FFF1B8 url(../img/promo.png) no-repeat right;
+border-radius: 10px;
+padding: 68px 71px;
+filter: drop-shadow(0px 7px 12px rgba(158, 158, 163, 0.1));
+}
+.text-block {
+    max-width: 538px;
+    width: 100%;
+}
+.promo-title {
+max-width: 430px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 39px;
+line-height: 46px;
+color: #302C34;
+margin-bottom: 16px;
+}
+.promo-desk {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+color: #302C34;
+}
+/*секция рестораны*/
+.section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+}
+.seacrh-input  {
+max-width: 306px;
+height: 34px;
+background: url('../img/search.svg') no-repeat 11px 10px;
+padding-left: 32px;
+border-radius: 2px; 
+border: 1px solid #D9D9D9;  
+}
+.input::placeholder {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #BFBFBF;
+}
+.card {
+    max-width: 384px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color:#FFF;
+    border-radius:7px;
+}
+.card-main {
+    padding: 21px 24px 35px;
+    position: relative;
+    
+}
+.card-main__header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 10px;
+}
+.card-title {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 32px;
+}
+.time-write {
+    background: #262626;
+    border-radius: 2px;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    padding: 5px 8px;
+}
+.reiting {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 32px;
+color: #FFC107;
+margin-left: 22px;
+margin-right: 26px;
+}
+.reiting::before {
+    content:'';
+    width: 15px;
+    height: 14px;
+    background:url(../img/star.svg);
+    position: absolute;
+    top: 0px;
+    left: 2px;
 }
