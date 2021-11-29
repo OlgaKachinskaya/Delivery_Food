@@ -11,7 +11,7 @@
     font-family: 'Roboto', sans-serif;
 }
     html {
-   font-family: 'Roboto' sans-serif;
+   font-family: 'Roboto', sans-serif;
 }
 .body {
     background-color: #F5F5F5;
@@ -115,6 +115,9 @@ line-height: 28px;
 color: #302C34;
 }
 /*секция рестораны*/
+.section-rest {
+    padding-bottom: 91px;
+}
 .section__header {
     display: flex;
     justify-content: space-between;
@@ -142,6 +145,8 @@ border: 1px solid #D9D9D9;
     margin-bottom: 30px;
     background-color:#FFF;
     border-radius:7px;
+    text-decoration: none;
+    color:black;
 }
 .card-main {
     padding: 21px 24px 35px;
@@ -222,4 +227,36 @@ midprice {
     top: 50%;
     left: -15px;
     margin-top: -3px;
+}
+/*footer секция*/
+footer {
+    background-color:#FFF;
+    padding: 60px 0;
+}
+.footer-block {
+    max-width: 556px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navigation {
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link {
+    font-size: 18px;
+    line-height: 21px;
+    color: #595959;
+    text-decoration: none;
+}
+.social-block {
+    max-width: 127px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
