@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delivery Food:Пицца плюс</title>
+    <title>Delivery Food: Тануки</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -16,18 +16,18 @@
 
 <div class="container block">
     <a href="../index.html" class="logo-link">
-        <img src="./img/logo.svg" alt="Логотип" class="logo-img">
+        <img src="../img/logo.svg" alt="Логотип" class="logo-img">
     </a>
 
     <input type="text" class="adress-input" placeholder="Адрес доставки">
 
     <div class="buttons">
         <button class="button button--primary">
-            <img src="./img/user.svg" alt="человек" class="login">
+            <img src="../img/user.svg" alt="человек" class="login">
             <span class="button-text">Войти</span>
         </button>
         <button class="button button--secondary">
-            <img src="./img/icon_container.svg" alt="корзина" class="cart">
+            <img src="../img/icon_container.svg" alt="корзина" class="cart-img">
             <span class="button-text">Корзина</span>
         </button>
     </div>
@@ -38,40 +38,33 @@
 </header>
 <!-- /.header -->
 
-<section class="section section-promo">
-    <div class="container promo-block">
-        <div class="text-block">
-            <h1 class="promo-title">Онлайн-сервис доставки еды на дом</h1>
-            <p class="promo-desk">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
-
-        
-        </div>
-    </div>
-    <!-- /.container -->
-</section>
-<!-- /.section section-promo -->
-<section class="section section-rest">
+<section class="section restourant">
     <div class="container">
-        <div class="section__header">
-            <h2 class="section__header-title">Рестораны</h2>
-        <input type="text" class="input seacrh-input" placeholder="Поиск блюд и ресторанов">
+        <div class="section__header restourant__header">
+            <h2 class="section__header-title">Тануки</h2>
+            <div class="card-desc">
+                <span class="reiting">4.5</span>
+                <strong class="midprice">От 900 ₽</strong>
+                <span class="dish">Пицца и суши</span>
+               </div>
         
         </div>
         <!-- /.section__header -->
         <div class="block cards">
         <div class="card">
             <div class="card-img">
-                <img src="./img/pizza-plus.png" alt="Картинка заведения">
+                <img src="../img/roll_ugr_standart.png" alt="Ролл">
             </div>
             <div class="card-main">
-               <div class="card-main__header">
-                <h3 class="card-title">Пицца плюс</h3>
-                <strong class="time-write">От 50 мин</strong>
-               </div>
-               <div class="card-desc">
-                <span class="reiting">4.5</span>
-                <strong class="midprice">От 900 ₽</strong>
-                <span class="dish">Пицца</span>
+               <div class="product-header">
+                <span class="card-title">Ролл угорь стандарт</span>
+                <p class="desk">Рис, угорь, соус унаги, кунжут, водоросли нори.</p>
+                </div>
+               <div class="product-desc">
+             <button class="button button--primary">В корзину
+                <img src="../img/shoppingcart_blue.svg" alt="корзина" class="cart-img">     
+             </button>
+               <span class="product-price">250 ₽</span>
                </div>
             </div>
             <!-- /.card-main -->
@@ -80,100 +73,99 @@
         <!-- /.card -->
         <div class="card">
             <div class="card-img">
-                <img src="./img/tanuki.jpg" alt="Картинка заведения">
+                <img src="../img/california.png" alt="Ролл">
             </div>
             <div class="card-main">
-                <div class="card-main__header">
-                    <h3 class="card-title">Тануки</h3>
-                    <strong class="time-write">От 50 мин</strong>
+               <div class="product-header">
+                <span class="card-title">Калифорния лосось стандарт</span>
+                <p class="desk">Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</p>
                 </div>
-                <div class="card-desk">
-                    <span class="reiting">4.5</span>
-                    <strong class="midprice">От 900 ₽</strong>
-                    <span class="dish">Пицца</span>
-                </div>
+               <div class="product-desc">
+             <button class="button button--primary">В корзину
+                <img src="../img/shoppingcart_blue.svg" alt="корзина" class="cart-img">     
+             </button>
+               <span class="product-price">395 ₽</span>
+               </div>
             </div>
+            <!-- /.card-main -->
+            <!-- /.card-img -->       
         </div>
-        <!-- /.card -->
         <div class="card">
             <div class="card-img">
-                <div class="card-img">
-                    <img src="./img/foodband.png" alt="Картинка заведения">
-                </div>
-                <div class="card-main">
-                    <div class="card-main__header">
-                        <h3 class="card-title">FoodBand</h3>
-                        <strong class="time-write">от 50 мин</strong>
-                    </div>
-                    <div class="desk">
-                        <span class="reiting">4.5</span>
-                        <strong class="midprice">От 900 ₽</strong>
-                        <span class="dish">Пицца</span>
-                    </div>
-                </div>
+                <img src="../img/okinava.png" alt="Ролл">
             </div>
+            <div class="card-main">
+               <div class="product-header">
+                <span class="card-title">Окинава стандарт</span>
+                <p class="desk"> Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...</p>
+                </div>
+               <div class="product-desc">
+             <button class="button button--primary">В корзину
+                <img src="../img/shoppingcart_blue.svg" alt="корзина" class="cart-img">     
+             </button>
+               <span class="product-price">250 ₽</span>
+               </div>
+            </div>
+            <!-- /.card-main -->
+            <!-- /.card-img -->       
         </div>
-        <!-- /.card -->
         <div class="card">
-            <div class="card">
-                <div class="card-img">
-                    <img src="./img/zhadinapizza.png" alt="Картинка заведения">
-                </div>
-                <div class="card-main">
-                    <div class="card-main__header">
-                        <h3 class="card-title">Жадина-пицца</h3>
-                        <strong class="time-write">От 50 мин</strong>
-
-                    </div>
-                    <div class="desk">
-                   <span class="reiting">4.5</span> 
-                        <strong class="midprice">От 900 ₽</strong>
-                       <span class="dish">Пицца</span>
-                    </div>
-                </div>
+            <div class="card-img">
+                <img src="../img/cezar.png" alt="Ролл">
             </div>
+            <div class="card-main">
+               <div class="product-header">
+                <span class="card-title">Цезарь маки хl</span>
+                <p class="desk">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь.</p>
+                </div>
+               <div class="product-desc">
+             <button class="button button--primary">В корзину
+                <img src="../img/shoppingcart_blue.svg" alt="корзина" class="cart-img">     
+             </button>
+               <span class="product-price">250 ₽</span>
+               </div>
+            </div>
+            <!-- /.card-main -->
+            <!-- /.card-img -->       
         </div>
-        <!-- /.card -->
         <div class="card">
-            <div class="card">
-                <div class="card-img">
-                    <img src="./img/tochkaedu.png" alt="Картинка заведения">
-                </div>
-                <div class="card-main">
-                    <div class="card-main__header">
-                        <h3 class="card-title">Точка еды</h3>
-                        <strong class="time-write">От 50 мин</strong>
-                        </div>
-                        <div class="card-desk">
-                            <span class="reiting">4.5</span>
-                            <strong class="midprice">От 900 ₽</strong>
-                            <span class="dish">Пицца</span>
-                        </div>
-                </div>
+            <div class="card-img">
+                <img src="../img/yasai.png" alt="Ролл">
             </div>
+            <div class="card-main">
+               <div class="product-header">
+                <span class="card-title">Ясай маки стандарт 185 г</span>
+                <p class="desk">Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг</p>
+                </div>
+               <div class="product-desc">
+             <button class="button button--primary">В корзину
+                <img src="../img/shoppingcart_blue.svg" alt="корзина" class="cart-img">     
+             </button>
+               <span class="product-price">250 ₽</span>
+               </div>
+            </div>
+            <!-- /.card-main -->
+            <!-- /.card-img -->       
         </div>
-        <!-- /.card -->
         <div class="card">
-            <div class="card">
-                <div class="card-img">
-                    <img src="./img/pizzaburger.png" alt="Картинка заведения">
-                </div>
-                <div class="card-main">
-                    <div class="card-main__header">
-                    <h3 class="card-title">PizzaBurger</h3>
-                    <strong class="time-write">От 50 мин</strong>
-                    </div>
-                    <div class="card-desk">
-                        <span class="reiting">4.5</span>
-                        <strong class="midprice">От 900 ₽</strong>
-                        <span class="dish">Пицца</span>
-                    </div>
-                </div>
+            <div class="card-img">
+                <img src="../img/roll_shrimp.png" alt="Ролл">
             </div>
+            <div class="card-main">
+               <div class="product-header">
+                <span class="card-title">Ролл с креветкой стандарт</span>
+                <p class="desk">Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы</p>
+                </div>
+               <div class="product-desc">
+             <button class="button button--primary">В корзину
+                <img src="../img/shoppingcart_blue.svg" alt="корзина" class="cart-img">     
+             </button>
+               <span class="product-price">250 ₽</span>
+               </div>
+            </div>
+            <!-- /.card-main -->
+            <!-- /.card-img -->       
         </div>
-        <!-- /.card -->
-        </div>
-        <!-- /.block -->
     </div>
     <!-- /.container -->
 </section>
@@ -182,7 +174,7 @@
 <div class="container block">
     <div class="footer-block">
         <a href="index.html" class="logo-link">
-            <img src="./img/logo.svg" alt="Логотип" class="logo-img">
+            <img src="../img/logo.svg" alt="Логотип" class="logo-img">
         </a>
        <nav class="navigation">
            <a href="#" class="nav-link">Ресторанам</a>
@@ -193,13 +185,13 @@
     </div>
    <div class="social-block">
        <a href="#" class="social-link">
-           <img src="./img/inst.svg" alt="социальные сети" class="social-img">
+           <img src="../img/inst.svg" alt="социальные сети" class="social-img">
         </a>
         <a href="#" class="social-link">
-            <img src="./img/face.svg" alt="социальные сети" class="social-img">
+            <img src="../img/face.svg" alt="социальные сети" class="social-img">
         </a>
         <a href="#" class="social-link">
-            <img src="./img/vk.svg" alt="социальные сети" class="social-img">
+            <img src="../img/vk.svg" alt="социальные сети" class="social-img">
         </a>
     </div>
 </div>
