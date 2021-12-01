@@ -408,3 +408,6 @@ line-height: 23px;
 .rub-sum {
     margin-left: 5px;
 }
+.modal--close {
+    display: none;
+}
