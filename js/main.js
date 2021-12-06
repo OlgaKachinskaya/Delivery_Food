@@ -1,9 +1,26 @@
 const btnCart = document.getElementById('cart');
 const modal = document.querySelector('.modal')
 const btnClose = document.querySelector('.btn-close')
+const mainIndex = document.getElementById('index')
+const mainRest = document.getElementById('restaurant')
+const cardsBlockIndex = mainIndex.querySelector('.cards')
+const cardsIndex = cardsBlockIndex.querySelectorAll('.card')
+const logos = document.querySelectorAll('.logo-link')
+const cardsBlockRest = mainRest.querySelector('.cards')
+const cardsRest = cardsBlockRest.querySelectorAll('.card')
 
+console.log(cardsRest)
 //объявление функций//
+const getProductModal = (nameProduct, priceProduct, index = 0) => {
+   
+    let nameProductBlock = rows[index].querySelector('.product-name')
+    let priceProductBlock = rows[index].querySelector('.price')    
 
+    nameProductBlock.textContent=nameProduct
+    priceProductBlock.textContent=priceProduct
+
+
+}
 const modalOpen = () => {
    modal.classList.toggle('modal--close')
 }
@@ -22,6 +39,10 @@ const getFullPrice = () => {
     })
     
     total.textContent = fullPrice
+}
+const getToMain = () => {
+    mainRest.classList.toggle('not--active')
+    mainIndex.classList.toggle('not--active')
 }
 //вызов функций//
 btnCart.addEventListener('click', modalOpen);
@@ -71,20 +92,6 @@ rows.forEach(row => {
 
     
 })
-getFullPrice()
- 
-const mainIndex = document.getElementById('index')
-const mainRest = document.getElementById('restaurant')
-const cardsBlockIndex = mainIndex.querySelector('.cards')
-const cardsIndex = cardsBlockIndex.querySelectorAll('.card')
-const logos = document.querySelectorAll('.logo-link')
-
-
-const getToMain = () => {
-    mainRest.classList.toggle('not--active')
-    mainIndex.classList.toggle('not--active')
-}
-
 cardsIndex.forEach(card => {
     card.addEventListener('click', () => {
         getToMain()
@@ -98,3 +105,18 @@ logos.forEach(logo => {
         }
     })
 })
+
+
+
+
+cardsRest.forEach((card, index) => {
+    let nameProductBlock = card.querySelector('.card-title')
+    let priceProductBlock = card.querySelector('.product-price')
+    let nameProduct = nameProductBlock.textContent
+    let priceProduct = +priceProductBlock.textContent.slice(0, 3)
+
+    getProductModal(nameProduct, priceProduct, index)
+
+})
+
+getFullPrice()
