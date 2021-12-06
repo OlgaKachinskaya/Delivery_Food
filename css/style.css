@@ -157,6 +157,10 @@ border: 1px solid #D9D9D9;
     border-radius:7px;
     text-decoration: none;
     color:black;
+    
+}
+#index .card {
+    cursor:pointer;
 }
 .card-main {
     padding: 21px 24px 35px;
@@ -411,3 +415,133 @@ line-height: 23px;
 .modal--close {
     display: none;
 }
+.not--active {
+    display: none;
+}
+/*адаптация под экраны*/
+@media (max-width: 1240px) {
+    .container {
+    width: 95%;
+    }
+   .logo-link {
+       display: none;
+   } 
+   .cards {
+       justify-content: space-around;
+   }
+   .card {
+       max-width:40%;
+   }
+   .card-img img {
+       width: 100%;
+   }
+}
+@media (max-width:980px) {
+    .header__buttons {
+        display: none;
+    }
+    .header .logo-link {
+        display: block;
+        order: 1;
+    }
+    .adress-input {
+        width: 75%;
+    }
+    .promo-block {
+        background: #FFF1B8 ;
+    }
+    .card {
+        max-width: 384px;
+    }
+
+}
+@media (max-width:860px) {
+    .block {
+max-width: 300px;
+    }
+}
+
+@media (max-width: 680px) {
+    .adress-input {
+        width: 100%;
+        order:-1;
+        margin-bottom: 20px;
+    }
+    .block__header {
+        flex-wrap: wrap;
+        
+    }
+    .header__buttons {
+        display: flex;
+    }
+    .header .logo-link {
+order: 0;
+    }
+    .header {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .section-promo {
+        display: none;
+    }
+    .section__header-title{
+        display: none;
+    
+    }
+    .seacrh-input {
+        max-width: 75%;
+
+    }
+    .section__header {
+        justify-content: center;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        max-width: 75%;
+    }
+    .block__footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-block {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .footer {
+        padding: 20px;
+    }
+}
+@media (max-width:480px) {
+    .adress-input {
+        width: 100%;
+        order:-1;
+        mb20px
+    }
+
+    .block__header {
+        flex-wrap: wrap;
+        
+    }
+    .header__buttons {
+        display: flex;
+    }
+    .header .logo-link {
+order: 0;
+    }
+    .header {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .card {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+    .navigation {
+        display: none;
+    }
+    section-rest {
+        padding-bottom: 0;
+    }
+   
