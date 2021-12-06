@@ -8,6 +8,8 @@ const cardsIndex = cardsBlockIndex.querySelectorAll('.card')
 const logos = document.querySelectorAll('.logo-link')
 const cardsBlockRest = mainRest.querySelector('.cards')
 const cardsRest = cardsBlockRest.querySelectorAll('.card')
+const rows = modal.querySelectorAll('.row')
+const total = modal.querySelector('.modal-sum')
 
 console.log(cardsRest)
 //объявление функций//
@@ -24,9 +26,6 @@ const getProductModal = (nameProduct, priceProduct, index = 0) => {
 const modalOpen = () => {
    modal.classList.toggle('modal--close')
 }
-const rows = modal.querySelectorAll('.row')
-const total = modal.querySelector('.modal-sum')
-
 
 const getFullPrice = () => {
     let fullPrice = 0
@@ -48,7 +47,6 @@ const getToMain = () => {
 btnCart.addEventListener('click', modalOpen);
 btnClose.addEventListener('click', modalOpen);
 
-
 modal.addEventListener('click', (Event) => {
     if (Event.target == modal) {
         modalOpen()
@@ -56,8 +54,6 @@ modal.addEventListener('click', (Event) => {
 })
 
 //логгеры//
-
-
 
 rows.forEach(row => {
     let newPrice=0;
@@ -92,6 +88,16 @@ rows.forEach(row => {
 
     
 })
+cardsRest.forEach((card, index) => {
+    let nameProductBlock = card.querySelector('.card-title')
+    let priceProductBlock = card.querySelector('.product-price')
+    let nameProduct = nameProductBlock.textContent
+    let priceProduct = +priceProductBlock.textContent.slice(0, 3)
+
+    getProductModal(nameProduct, priceProduct, index)
+
+})
+
 cardsIndex.forEach(card => {
     card.addEventListener('click', () => {
         getToMain()
@@ -104,19 +110,6 @@ logos.forEach(logo => {
             getToMain()
         }
     })
-})
-
-
-
-
-cardsRest.forEach((card, index) => {
-    let nameProductBlock = card.querySelector('.card-title')
-    let priceProductBlock = card.querySelector('.product-price')
-    let nameProduct = nameProductBlock.textContent
-    let priceProduct = +priceProductBlock.textContent.slice(0, 3)
-
-    getProductModal(nameProduct, priceProduct, index)
-
 })
 
 getFullPrice()
