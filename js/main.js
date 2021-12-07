@@ -1,4 +1,5 @@
 const btnCart = document.getElementById('cart');
+const total = modal.querySelector('.modal-sum')
 const modal = document.querySelector('.modal')
 const btnClose = document.querySelector('.btn-close')
 const mainIndex = document.getElementById('index')
@@ -8,15 +9,21 @@ const cardsIndex = cardsBlockIndex.querySelectorAll('.card')
 const logos = document.querySelectorAll('.logo-link')
 const cardsBlockRest = mainRest.querySelector('.cards')
 const cardsRest = cardsBlockRest.querySelectorAll('.card')
-const rows = modal.querySelectorAll('.row')
-const total = modal.querySelector('.modal-sum')
 
-console.log(cardsRest)
+
+
+let rows = modal.querySelectorAll('.row')
+
+
 //объявление функций//
-const getProductModal = (nameProduct, priceProduct, index = 0) => {
-console.log(nameProduct);
-console.log(priceProduct);
-console.log(index);
+    const getProductModal = (nameProduct, priceProduct, index = 
+    rows = rowsBlock.querySelectorAll('.row')
+    
+    console.log(rows);
+    
+    //console.log(nameProduct);
+    //console.log(priceProduct);
+    //console.log(index);
    // rows [index]
    // let nameProductBlock = rows[index].querySelector('.product-name')
    // let priceProductBlock = rows[index].querySelector('.price')    
@@ -55,6 +62,8 @@ const getNewPrice = (count, price, priceBlock) => {
 //вызов функций//
 btnCart.addEventListener('click', modalOpen);
 btnClose.addEventListener('click', modalOpen);
+//cardsRest.addEventListener('click', console.log(cardsRest));
+
 
 modal.addEventListener('click', (Event) => {
     if (Event.target == modal) {
